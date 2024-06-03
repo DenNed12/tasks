@@ -5,7 +5,7 @@ class Gadget {
     }
     getPower(min) {
        let res = this.power * min
-        console.log("Расход электричества за" + min + "минут равен" + res)
+        console.log("Расход электричества за " + min + " минут равен " + res)
     }
 
    isConnected() {
@@ -46,3 +46,4 @@ asus.runComputer()
 let tableLamp = new Lamp('table lamp',10)
 tableLamp.isConnected()
 tableLamp.turnOnLamp()
+asus.getPower(25)

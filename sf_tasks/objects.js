@@ -11,16 +11,19 @@
 // Задание 1
 function object(obj) {
   for( let key in obj) {
-    console.log(key)
+    if(obj.hasOwnProperty(key)){
+      console.log(key)}
   }
 }
-
-let student = {
-  name:"Vasya",
-  age: 18,
-  university: "MSU"
+let person ={
+  a:'hello',
+  lol: 12
 }
-//object(student)
+student = Object.create(person)
+student.city = 'Moskow'
+object(student)
+
+
 
 
 // Задание 2
@@ -37,11 +40,12 @@ function checker(str, obj){
 
 
 // Задание 3
-function createObject () {
-  let obj  = new Object()
-  return obj
+a = function newObject(){
+  let obj= new Object()
+  obj.__proto__= null
+  console.log(obj, obj.__proto__)
 }
-//console.log(ctreateObject())
+a()
 
 
 

@@ -1,3 +1,7 @@
+
+
+
+// Задача 5
 class Gadget {
     constructor(name, power) {
         this.name = name

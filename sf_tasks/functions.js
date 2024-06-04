@@ -72,7 +72,6 @@ const foo = (x,n) => {
     for (let i; i<n; i++){
         res *= x
     }
-    return res;
-}
+    return res;}}
 const result = foo(3,2)
-console.log(result)
+console.log(result)S
